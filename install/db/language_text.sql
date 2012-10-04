@@ -12,6 +12,10 @@ CREATE TABLE `language_text` (
   PRIMARY KEY  (`language_code`,`variable`,`term`)
 ) ENGINE=MyISAM;
 
+INSERT INTO `language_text` VALUES ('en', '','page_Template','Page Template','2010-01-27 15:48:35','');
+INSERT INTO `language_text` VALUES ('en', '','Structure_Template','Structure Manager','2010-01-27 15:48:35','');
+INSERT INTO `language_text` VALUES ('en', '','Layout_Template','Layout Template','2010-01-27 15:48:35','');
+INSERT INTO `language_text` VALUES ('en', '','template','Template Manager','2010-01-27 15:48:35',''); 
 INSERT INTO `language_text` VALUES ('en', '_msgs','TR_CONFIRM_ADD_TEST_QUESTIONS','Are you sure you want to <em>add</em> the following questions? \r\n<ul>%s</ul>','2010-03-31 11:47:09','');
 INSERT INTO `language_text` VALUES ('en', '_msgs','TR_CONFIRM_DELETE','Are you sure you want to delete these items?<br />\r\n\r\n <ul> %s </ul>','2010-03-25 14:07:57','');
 INSERT INTO `language_text` VALUES ('en', '_msgs','TR_CONFIRM_DELETE_COURSE_1','Are you sure you want to <strong>Delete</strong> the lesson <strong><em>%s</em></strong>?','2010-06-07 12:44:34','');
@@ -161,10 +165,6 @@ INSERT INTO `language_text` VALUES ('en', '_msgs','TR_HELP_ADD_EDIT_LANGUAGE','<
 INSERT INTO `language_text` VALUES ('en', '_msgs','TR_HELP_ARRANGE_CONTENT','<h3>Arrange Content</h3>\r\n\r\n<p>While viewing content in a lesson, click on the Arrange Content icon (<img src=\"../themes/default/images/arrange_content.gif\" alt=\"\">) to move pages and folders around within that lesson. To move an item, select the radio button next to it, then use the before icon (<img src=\"../images/before.gif\" alt=\"\">) to move the selected item before another item, use the after icon (<img src=\"../images/after.gif\" alt=\"\">) to move an item after another item, or use the child of icon (<img src=\"../images/child_of.gif\" alt=\"\">) to move an item into a folder.<p>','2010-06-16 16:28:02','');
 INSERT INTO `language_text` VALUES ('en', '_msgs','TR_HELP_CHANGE_EMAIL','<h2>Change Email</h2>\r\n<p>This page allows users to change email addresses. </p>\r\n','2010-01-27 15:48:35','');
 INSERT INTO `language_text` VALUES ('en', '_msgs','TR_HELP_CHANGE_PASSWORD','<h2>Change Password</h2>\r\n<p>This page allows users to change passwords. The form authenticates users by checking their old password first, and then setting a new password and typing it again.</p>\r\n','2010-01-27 15:48:35','');
-
-/*catia CHANGE*/ 
-INSERT INTO `language_text` VALUES ('en', '_msgs','TR_WARNING_NO_STRUCT','No structure found.','2012-08-29 10:53:02','');
-/**/
 INSERT INTO `language_text` VALUES ('en', '_msgs','TR_HELP_COURSE_PROPERTY','<h3>Lesson Properties</h3>\r\n<p>While viewing any folder of page in a lesson, click on the Lesson Properties icon (<img src=\"../themes/default/images/course_property.png\" alt=\"\"/>) to modify the following:</p>\r\n\r\n<ul>\r\n<li><strong>Title</strong>: Write a few words to provide a short description of the lesson content.</li>\r\n<li><strong>Category Name</strong>: Select from the available content categories, the one that best categorizes your lesson. If the category you need is not present, choose Uncategorized, or suggest a new category to the system\'s administrator.</li>\r\n<li><strong>Primary Language</strong>: Choose from the available languages, the one your lesson is written in. Available languages are based on the languages installed on the system. To have additional languages installed, talk to your system administrator.</li>\r\n<li><strong>Description</strong>: This a longer description of the lesson, expanding on the description in the title.</li>\r\n<li><strong>Optional Copyright Notice</strong>: Write a copyright notice to appear at the bottom of each page in the lesson.</li>\r\n<li><strong>Hide Lesson</strong>: Select this checkbox if you want to prevent others from searching or viewing the lesson. This might be enabled while a lesson is being created, then disabled when a lesson is ready for distribution.</li>\r\n</ul>','2010-06-16 15:10:47','');
 INSERT INTO `language_text` VALUES ('en', '_msgs','TR_HELP_CREATE_COURSE','<h2>Create Lesson</h2>\r\n<p>There are two ways to create a lesson, manually by defining course properties, and automatically by importing an existing IMS Content Package or IMS Common Cartridge.</p>\r\n\r\n<h3>Manual Create Lesson</h3>\r\n<p>Follow the \"Create Lesson\" link on the Create Lesson screen. Fill out the Lesson Properties screen then save. You will be directed into the lesson, after which you can add folders and content pages to the lesson. </p>\r\n<h3>Import Lesson</h3>\r\n<p>If you have an existing lesson, either created in ATutor, or created in another system that generates content packages or common cartridges, you can either upload the zipped file, or you can enter the URL to its location on the Web to import it. Once imported, use the content editing tools to modify the content.</p>\r\n\r\n<h3>Hide Lesson</h3>\r\n<p>While developing content it is advisable to select the \"Hide lesson from other users\" checkbox.  Once the lesson is ready for public viewing, change the setting in the lesson properties.</p>','2010-06-16 15:07:05','');
 INSERT INTO `language_text` VALUES ('en', '_msgs','TR_HELP_CREATE_EDIT_USER ','<h2>Create/Edit User</h2>\r\n\r\n<p>All fields on \"Create User\" and \"Edit User\" forms are required. Most fields are self-explanatory. When the \"Account Status\" field is set to disabled, the user is not able to login. </p>\r\n<p>User accounts can also be created by individuals using the Registration form available through the public pages of Transformable. The accounts created via the Registration form are automatically set to user group \"Regular User\". </p>','2010-01-27 15:48:35','');
@@ -244,9 +244,6 @@ INSERT INTO `language_text` VALUES ('en', '_template','alter','Alter','2010-01-2
 INSERT INTO `language_text` VALUES ('en', '_template','alternate_text','Alternate Text','2010-04-09 14:49:24','');
 INSERT INTO `language_text` VALUES ('en', '_template','alternatives','Alternatives','2010-05-21 15:57:28','');
 INSERT INTO `language_text` VALUES ('en', '_template','alternative_content','Adapted Content','2010-05-20 16:08:37','');
-INSERT INTO `language_text` VALUES ('en', '_template','manually','Manually','2012-08-27 16:08:37','');
-INSERT INTO `language_text` VALUES ('en', '_template','structure','Structure','2012-08-27 16:08:37','');
-INSERT INTO `language_text` VALUES ('en', '_template','wizard','Wizard','2012-08-27 16:08:37','');
 INSERT INTO `language_text` VALUES ('en', '_template','answer','Answer','2010-03-25 14:52:29','');
 INSERT INTO `language_text` VALUES ('en', '_template','answers','Answers','2010-03-25 14:52:29','');
 INSERT INTO `language_text` VALUES ('en', '_template','answer_size','Answer Size','2010-03-25 15:11:39','');
@@ -330,8 +327,7 @@ INSERT INTO `language_text` VALUES ('en', '_template','create','Create','2010-03
 INSERT INTO `language_text` VALUES ('en', '_template','create_category','Create Category','2010-03-22 15:57:11','');
 INSERT INTO `language_text` VALUES ('en', '_template','create_content','Create Content','2010-06-11 15:07:06','');
 INSERT INTO `language_text` VALUES ('en', '_template','create_content_1','<span style=\"font-weight:bold\">Method 1</span>: Use','2010-06-11 15:06:33','');
-INSERT INTO `language_text` VALUES ('en', '_template','create_content_2','<span style=\"font-weight:bold\">Create Lesson</span>: manually <a href=\"%1s\">create a content page</a> or <a href=\"%2s\">create a content folder</a>. <br />These tools are also available at side menu \"Content Navigation\" as \"Add top page\" or \"Add top folder\" links.','2010-06-25 11:19:02','');
-INSERT INTO `language_text` VALUES ('en', '_template','create_content_3','<span style=\"font-weight:bold\">Create Lesson</span>: choose one of these <a href=\"%1s\">structures</a>','2010-06-25 11:19:02','');
+INSERT INTO `language_text` VALUES ('en', '_template','create_content_2','<span style=\"font-weight:bold\">Create Lesson</span>: Manually <a href=\"%1s\">create a content page</a> or <a href=\"%2s\">create a content folder</a>. <br />These tools are also available at side menu \"Content Navigation\" as \"Add top page\" or \"Add top folder\" links.','2010-06-25 11:19:02','');
 INSERT INTO `language_text` VALUES ('en', '_template','create_course','Create Lesson','2010-06-07 12:41:32','');
 INSERT INTO `language_text` VALUES ('en', '_template','create_course_1','<span style=\"font-weight:bold\">Create New Lesson</span>: Create a lesson by using','2010-06-25 11:21:41','');
 INSERT INTO `language_text` VALUES ('en', '_template','create_course_2','<span style=\"font-weight:bold\">Import Existing Lesson</span>: Import a content package of common cartridge. Or, if you have the Web address directly to a content package common cartridge, enter it into the URL field to import it directly from the Web.','2010-06-25 11:22:38','');
@@ -836,23 +832,23 @@ INSERT INTO `language_text` VALUES ('en', '_template','yyyy-mm-dd','yyyy-mm-dd',
 INSERT INTO `language_text` VALUES ('en', '_template','structures','Structures','2010-04-07 13:55:04','');
 INSERT INTO `language_text` VALUES ('en', '_template','zip_illegal_contents','The contents of this archive are listed below. Illegal file types will not be extracted, and file names containing illegal characters will be translated.','2010-04-07 15:23:22','');
 INSERT INTO `language_text` (`language_code`, `variable`, `term`, `text`, `revised_date`, `context`) VALUES
-('en', 'page_template', 'activate_page_template', 0x416374697661746520706167652074656d706c61746573, '0000-00-00 00:00:00', 'templates'),
-('en', 'page_template', 'add_to_existing_page_template', 0x546865726520617265206d6f64656c7320616c7265616479206f6e2074686520706167652e20446f20796f752077616e7420746f20696e736572742074686520636f70696564206d6f64656c73206f6e2074686520746f70206f662074686520706167653f, '0000-00-00 00:00:00', 'templates'),
-('en', 'page_template', 'arrange_page_template', 0x417272616e676520706167652074656d706c61746573, '0000-00-00 00:00:00', 'templates'),
-('en', 'page_template', 'copy', 0x636f7079, '0000-00-00 00:00:00', 'templates'),
-('en', 'layout', 'layout', 'Layout template', '2011-11-30 00:00:00', 'templates'),
-('en', 'page_template', 'copy_page_template_sequence', 0x636f7079206d6f64656c2073657175656e6365, '0000-00-00 00:00:00', 'templates'),
-('en', 'page_template', 'page_template', 0x506167652074656d706c61746573, '2011-12-07 00:00:00', 'templates'),
-('en', 'page_template', 'no_set_copied', 0x6e6f2073657420636f7069656421, '0000-00-00 00:00:00', 'templates'),
-('en', 'page_template', 'paste', 0x7061737465, '0000-00-00 00:00:00', 'templates'),
-('en', 'page_template', 'paste_page_template_sequence', 0x7061737465206d6f64656c2073657175656e6365, '0000-00-00 00:00:00', 'templates'),
-('en', 'layout', 'apply_layout_course_confirm', 0x41726520796f75207375726520796f752077616e7420746f206170706c7920746865206c61796f757420746f20746865204c4f20636f6e74656e743f, '2011-11-30 00:00:00', 'templates'),
-('en', 'layout', 'apply_layout_content_confirm', 0x41726520796f75207375726520796f752077616e7420746f206170706c7920746865206c61796f757420746f20746865207061676520636f6e74656e743f, '2011-11-30 00:00:00', 'templates'),
-('en', 'layout', 'no_js', 0x54686973206d6f64756c65207265717569726573204a61766153637269707420656e61626c656421, '2011-11-30 00:00:00', 'templates'),
-('en', 'layout', 'reset_layout_course_confirm', 0x41726520796f75207375726520796f752077616e7420746f20726573657420746865204c4f206c61796f757420746f2069745c2773206f726967696e616c20636f6e66696775726174696f6e3f, '2011-11-30 00:00:00', 'templates'),
-('en', 'layout', 'reset_layout_countent_confirm', 0x41726520796f75207375726520796f752077616e7420746f207265736574207468652070616765207468656d6520746f2069745c2773206f726967696e616c20636f6e66696775726174696f6e3f, '2011-11-30 00:00:00', 'templates'),
-('en', 'layout', 'layout_course_apply', 'Apply layout to the entire course', '2011-11-30 00:00:00', 'templates'),
-('en', 'layout', 'layout_content_apply', 'Apply layout to this content', '2011-11-30 00:00:00', 'templates'),
-('en', 'layout', 'layout_select', 0x53656c6563742061206c61796f757420746f2070726576696577, '2011-11-30 00:00:00', 'templates');
+('en', 'models', 'activate_models', 0x416374697661746520706167652074656d706c61746573, '0000-00-00 00:00:00', 'themod'),
+('en', 'models', 'add_to_existing_models', 0x546865726520617265206d6f64656c7320616c7265616479206f6e2074686520706167652e20446f20796f752077616e7420746f20696e736572742074686520636f70696564206d6f64656c73206f6e2074686520746f70206f662074686520706167653f, '0000-00-00 00:00:00', 'themod'),
+('en', 'models', 'arrange_models', 0x417272616e676520706167652074656d706c61746573, '0000-00-00 00:00:00', 'themod'),
+('en', 'models', 'copy', 0x636f7079, '0000-00-00 00:00:00', 'themod'),
+('en', 'models', 'copy_model_sequence', 0x636f7079206d6f64656c2073657175656e6365, '0000-00-00 00:00:00', 'themod'),
+('en', 'models', 'models', 0x506167652074656d706c61746573, '2011-12-07 00:00:00', 'themod'),
+('en', 'models', 'no_set_copied', 0x6e6f2073657420636f7069656421, '0000-00-00 00:00:00', 'themod'),
+('en', 'models', 'paste', 0x7061737465, '0000-00-00 00:00:00', 'themod'),
+('en', 'models', 'paste_model_sequence', 0x7061737465206d6f64656c2073657175656e6365, '0000-00-00 00:00:00', 'themod'),
+('en', 'themes', 'apply_theme_course_confirm', 0x41726520796f75207375726520796f752077616e7420746f206170706c7920746865206c61796f757420746f20746865204c4f20636f6e74656e743f, '2011-11-30 00:00:00', 'themod'),
+('en', 'themes', 'apply_theme_lesson_confirm', 0x41726520796f75207375726520796f752077616e7420746f206170706c7920746865206c61796f757420746f20746865207061676520636f6e74656e743f, '2011-11-30 00:00:00', 'themod'),
+('en', 'themes', 'no_js', 0x54686973206d6f64756c65207265717569726573204a61766153637269707420656e61626c656421, '2011-11-30 00:00:00', 'themod'),
+('en', 'themes', 'reset_theme_course_confirm', 0x41726520796f75207375726520796f752077616e7420746f20726573657420746865204c4f206c61796f757420746f2069745c2773206f726967696e616c20636f6e66696775726174696f6e3f, '2011-11-30 00:00:00', 'themod'),
+('en', 'themes', 'reset_theme_lesson_confirm', 0x41726520796f75207375726520796f752077616e7420746f207265736574207468652070616765207468656d6520746f2069745c2773206f726967696e616c20636f6e66696775726174696f6e3f, '2011-11-30 00:00:00', 'themod'),
+('en', 'themes', 'themes', 0x4c61796f7574, '2011-11-30 00:00:00', 'themod'),
+('en', 'themes', 'theme_course_apply', 0x4170706c7920746865206c61796f757420746f20746865204c4f, '2011-11-30 00:00:00', 'themod'),
+('en', 'themes', 'theme_lesson_apply', 0x4170706c7920746865206c61796f757420746f207468652070616765, '2011-11-30 00:00:00', 'themod'),
+('en', 'themes', 'theme_select', 0x53656c6563742061206c61796f757420746f2070726576696577, '2011-11-30 00:00:00', 'themod');
 
 
