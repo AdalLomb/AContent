@@ -40,6 +40,7 @@ define('TR_PRIV_UPDATER', 7);
 define('TR_PRIV_MANAGE_TESTS', 8);
 define('TR_PRIV_FILE_MANAGER', 9);
 define('TR_PRIV_PROFILE', 10);
+define('TR_PRIV_TEMPLATE', 11);
 
 /* constants used for menu item generation. Used in class Menu (include/classes/Menu.class.php) */
 define('TR_NAV_PUBLIC', 'TR_NAV_PUBLIC');  // public menus, when no user login
@@ -121,7 +122,9 @@ if (array_key_exists(TR_PRIV_HOME, $privs) && Utility::authenticate($privs[TR_PR
 	
 	if(isset($_struct_name)) 
 		$_pages['home/structs/outline.php']['title'] = '"'. $_struct_name . ' based" structure outline';
-
+	
+		
+	
 	
 	if (isset($_current_user) && $_current_user->isAuthor())
 	{
@@ -295,7 +298,7 @@ if (array_key_exists(TR_PRIV_LANGUAGE_MANAGEMENT, $privs) && Utility::authentica
 	$_pages['language/language_delete.php']['parent'] = 'language/index.php';
 }
 
-// translation
+// translation 
 if (array_key_exists(TR_PRIV_TRANSLATION, $privs) && Utility::authenticate($privs[TR_PRIV_TRANSLATION], false))
 {
 	$_pages['translation/index.php']['title_var'] = 'translation';
@@ -487,5 +490,31 @@ if (array_key_exists(TR_PRIV_FILE_MANAGER, $privs) && Utility::authenticate($pri
 	
 	$_pages['file_manager/delete.php']['title_var'] = 'delete';
 	$_pages['file_manager/delete.php']['parent']    = 'file_manager/index.php';
+}
+
+// template pages
+if (array_key_exists(TR_PRIV_TEMPLATE, $privs) && Utility::authenticate($privs[TR_PRIV_TEMPLATE], false))
+{
+	$_pages['template/index.php']['title_var'] = 'template';
+	$_pages['template/index.php']['parent']    = TR_NAV_TOP;
+	$_pages['template/index.php']['guide']    = 'TR_HELP_TEMPLATE';
+	$_pages['template/index.php']['children']  = array_merge(array('template/structureTemplate.php', 
+	                                                               'template/pageTemplate.php',
+																   'template/layoutTemplate.php'), 
+	                                                       isset($_pages['template/index.php']['children']) ? $_pages['template/index.php']['children'] : array());
+	                                                        
+	$_pages['template/structureTemplate.php']['title_var'] = 'Structure_Template';
+	$_pages['template/structureTemplate.php']['parent']    = 'template/index.php';
+	$_pages['template/structureTemplate.php']['guide']    = 'TR_HELP_STRUCTURE_TEMPLATE';
+	                                                        
+	$_pages['template/pageTemplate.php']['title_var'] = 'Page_Template';
+	$_pages['template/pageTemplate.php']['parent']    = 'template/index.php';
+	$_pages['template/pageTemplate.php']['guide']    = 'TR_HELP_PAGE_TEMPLATE';
+	
+	$_pages['template/layoutTemplate.php']['title_var'] = 'Layout_Template';
+	$_pages['template/layoutTemplate.php']['parent']    = 'template/index.php';
+	$_pages['template/layoutTemplate.php']['guide']    = 'TR_HELP_LAYOUT_TEMPLATE';
+	
+	
 }
 ?>
