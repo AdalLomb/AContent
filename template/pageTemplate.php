@@ -18,10 +18,15 @@ include_once(TR_INCLUDE_PATH.'classes/DAO/LanguageTextDAO.class.php');
 if (!defined('TR_INCLUDE_PATH')) { exit; }
 if (!defined('TR_BASE_HREF')) { exit; }
 
-// definisco aspetto
+
 include(TR_INCLUDE_PATH.'header.inc.php');
+?>
+ <div class="input-form" style="width: 95%;"> 
+     <?php echo "Page Template";?>
+ </div>
+
+<?php
 
 
-// definiscono la parte sotto
 include(TR_INCLUDE_PATH.'footer.inc.php'); 
 ?>

@@ -15,13 +15,13 @@ include_once(TR_INCLUDE_PATH.'classes/DAO/DAO.class.php');
 include_once(TR_INCLUDE_PATH.'classes/DAO/LanguagesDAO.class.php');
 include_once(TR_INCLUDE_PATH.'classes/DAO/LanguageTextDAO.class.php');
 
-// definisco aspetto
 include(TR_INCLUDE_PATH.'header.inc.php');
 ?>
+ <div class="input-form" style="width: 95%;"> 
+     <?php echo "Layout Template";?>
+ </div>
 
+<?php
 
-
-<?php 
-// definiscono la parte sotto
 include(TR_INCLUDE_PATH.'footer.inc.php'); 
 ?>
