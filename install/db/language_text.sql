@@ -12,6 +12,7 @@ CREATE TABLE `language_text` (
   PRIMARY KEY  (`language_code`,`variable`,`term`)
 ) ENGINE=MyISAM;
 
+INSERT INTO `language_text` VALUES ('en', '_msgs','structures_available','The template structures available are:','2010-01-27 15:48:35',''); 
 INSERT INTO `language_text` VALUES ('en', '','page_Template','Page Template','2010-01-27 15:48:35','');
 INSERT INTO `language_text` VALUES ('en', '','Structure_Template','Structure Manager','2010-01-27 15:48:35','');
 INSERT INTO `language_text` VALUES ('en', '','Layout_Template','Layout Template','2010-01-27 15:48:35','');
