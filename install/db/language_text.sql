@@ -12,10 +12,12 @@ CREATE TABLE `language_text` (
   PRIMARY KEY  (`language_code`,`variable`,`term`)
 ) ENGINE=MyISAM;
 
-INSERT INTO `language_text` VALUES ('en', '_msgs','structures_available','The template structures available are:','2010-01-27 15:48:35',''); 
-INSERT INTO `language_text` VALUES ('en', '','page_Template','Page Template','2010-01-27 15:48:35','');
-INSERT INTO `language_text` VALUES ('en', '','Structure_Template','Structure Manager','2010-01-27 15:48:35','');
-INSERT INTO `language_text` VALUES ('en', '','Layout_Template','Layout Template','2010-01-27 15:48:35','');
+INSERT INTO `language_text` VALUES ('en', '_msgs','structure_wizard','"Create Structure" Tool','2010-01-27 15:48:35','') ;
+INSERT INTO `language_text` VALUES ('en', '_msgs','create_structure','<b>Create New Structure:</b> Create a structure by using','2010-01-27 15:48:35','') ;
+INSERT INTO `language_text` VALUES ('en', '_msgs','structures_available','The template structures available and editable are:','2010-01-27 15:48:35','') ;
+INSERT INTO `language_text` VALUES ('en', '','page_Template','Page ','2010-01-27 15:48:35',''); 
+INSERT INTO `language_text` VALUES ('en', '','Structure_Template','Structure','2010-01-27 15:48:35',''); 
+INSERT INTO `language_text` VALUES ('en', '','Layout_Template','Layout','2010-01-27 15:48:35','');
 INSERT INTO `language_text` VALUES ('en', '','template','Template Manager','2010-01-27 15:48:35',''); 
 INSERT INTO `language_text` VALUES ('en', '_msgs','TR_CONFIRM_ADD_TEST_QUESTIONS','Are you sure you want to <em>add</em> the following questions? \r\n<ul>%s</ul>','2010-03-31 11:47:09','');
 INSERT INTO `language_text` VALUES ('en', '_msgs','TR_CONFIRM_DELETE','Are you sure you want to delete these items?<br />\r\n\r\n <ul> %s </ul>','2010-03-25 14:07:57','');
